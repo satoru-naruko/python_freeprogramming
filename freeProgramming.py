@@ -2,6 +2,10 @@
 
 print("free programing start")
 
+#f-strings
+a = 'a'
+print(f' a is {a}')
+
 # 関数定義
 def printwrap(str):
     #インデントする
