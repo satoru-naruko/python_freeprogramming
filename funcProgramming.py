@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 
+from termcolor import colored
+
 print("funcPrograming start")
 
 
 def test_func(str):
-    print(str)
+    print(colored('test', 'yellow'))
 
 
 test_func("-----!!-----")
