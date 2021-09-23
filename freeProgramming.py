@@ -2,14 +2,16 @@
 
 print("free programing start")
 
-#f-strings
+# f-strings
 a = 'a'
 print(f' a is {a}')
 
+
 # 関数定義
 def printwrap(str):
-    #インデントする
+    # インデントする
     print(str)
+
 
 # 関数呼び出し
 printwrap("function test")
@@ -41,22 +43,22 @@ for fruit in fruits:
     print(fruit)
 
 # リスト定義(文字列)
-numbers = [4,6,7,89,4,21,1]
+numbers = [4, 6, 7, 89, 4, 21, 1]
 
 for num in numbers:
     print(num)
 
 # 辞書型
-dict_fruits = { 'banana':100, 'apple':'mac' }
+dict_fruits = {'banana': 100, 'apple': 'mac'}
 
 for df in dict_fruits:
-    #キーが表示される
+    # キーが表示される
     print(df)
 
 for df in dict_fruits.values():
-    #値が表示される
+    # 値が表示される
     print(df)
 
 for key, val in dict_fruits.items():
-    #key value で表示される
-    print(key,val)
+    # key value で表示される
+    print(key, val)
