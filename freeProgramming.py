@@ -1,6 +1,28 @@
 #!/usr/bin/env python3
+import abc
 
 print("free programing start")
+
+
+# 抽象クラス
+class Person(metaclass=abc.ABCMeta):
+    def __init__(self):
+        self.age = 20
+
+
+class Dog(object):
+    # class変数はすべてのオブジェクトで共有
+    type = 'animal'
+
+    def __init__(self, name):
+        self.name = name
+
+    def my_name(self):
+        print(self.name)
+
+
+dog = Dog('tom')
+dog.my_name()
 
 # f-strings
 a = 'a'
@@ -8,9 +30,9 @@ print(f' a is {a}')
 
 
 # 関数定義
-def printwrap(str):
+def printwrap(string):
     # インデントする
-    print(str)
+    print(string)
 
 
 # 関数呼び出し
