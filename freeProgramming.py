@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import abc
+import network
 
 print("free programing start")
 
