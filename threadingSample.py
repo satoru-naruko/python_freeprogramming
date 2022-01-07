@@ -21,7 +21,7 @@ def worker1(d, rlock):
 
 def worker2(d, rlock):
     logging.debug('start')
-    # memo -> "with rlock:" means rlock.acquire(). rlock.acuire needs rlock.release()
+    # memo -> "with rlock:" means rlock.acquire(). rlock.acquire needs rlock.release()
     with rlock:
         i = d['x']
         d['x'] = i + 1
